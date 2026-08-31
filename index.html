@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mullahoran LGFA Golf Scramble</title>
+<link rel="icon" type="image/png" href="assets/badges/Mullahoran.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brandmark" href="#top"><span class="dot"></span>MULLAHORAN&nbsp;LGFA</a>
+    <nav class="toplinks">
+      <a href="#info">Info</a>
+      <a href="#entry">Entry</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="#info">Info</a>
+    <a href="#entry">Entry</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <p class="eyebrow reveal">Mullahoran Ladies LGFA</p>
+    <div class="title-row reveal">
+      <h1 class="title">Scramble<br><span class="accent">for Mullahoran Ladies</span></h1>
+      <img class="host-logo-hero" src="assets/badges/Mullahoran.png" alt="Mullahoran LGFA crest">
+    </div>
+    <div class="hero-meta reveal">
+      <div class="item">
+        <span class="label">Dates</span>
+        <span class="value">4th &amp; 5th September 2026</span>
+      </div>
+      <div class="item">
+        <span class="label">Venue</span>
+        <span class="value">Crover House Hotel &amp; Golf Club</span>
+      </div>
+      <div class="item">
+        <span class="label">Format</span>
+        <span class="value">Scramble</span>
+      </div>
+    </div>
+
+    <div class="scoreboard reveal">
+      <div class="cell">
+        <div class="num">&euro;120</div>
+        <div class="cap">Adults Entry</div>
+      </div>
+      <div class="cell">
+        <div class="num">&euro;80</div>
+        <div class="cap">Juveniles Entry</div>
+      </div>
+      <div class="cell">
+        <div class="num">2</div>
+        <div class="cap">Days of Play</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="info">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Event Details</h2>
+        <p class="section-note"></p>
+      </div>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Format</h3>
+          <p>A team scramble golf competition — gather your team and play for fun, for pride, and for Mullahoran.</p>
+        </div>
+        <div class="info-card">
+          <h3>Eligibility</h3>
+          <p>All GUI and non-GUI members are welcome to enter, across both the adult and juvenile competitions.</p>
+        </div>
+        <div class="info-card">
+          <h3>Venue &amp; Dates</h3>
+          <p>Play runs across two days, Friday 4th and Saturday 5th September 2026, at Crover House Hotel &amp; Golf Club.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="entry">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Entry &amp; Sponsorship</h2>
+        <p class="section-note">Main sponsor: Feme-Care Hygiene.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Adults</h3>
+          <p class="price">&euro;120 <span>per team</span></p>
+          <p class="desc">Entry into the adult scramble competition.</p>
+        </div>
+        <div class="price-card">
+          <h3>Juveniles</h3>
+          <p class="price">&euro;80 <span>per team</span></p>
+          <p class="desc">Entry into the juvenile scramble competition.</p>
+        </div>
+        <div class="price-card">
+          <h3>Tee Box Sponsorship</h3>
+          <p class="price">&euro;50</p>
+          <p class="desc">Have your business name displayed at a tee box on the course.</p>
+        </div>
+        <div class="price-card">
+          <h3>Green Sponsorship</h3>
+          <p class="price">&euro;100</p>
+          <p class="desc">Have your business name displayed at a green on the course.</p>
+        </div>
+        <div class="price-card">
+          <h3>Sponsor a Prize</h3>
+          <p class="price">Support &amp; promote your business</p>
+          <p class="desc">Donate a prize for the competition — get in touch to arrange.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Book Your Team</h2>
+      </div>
+      <div class="price-card">
+        <h3>Booking</h3>
+        <p class="desc">To book, contact Joe Cullen on <a href="tel:+353872447105">087 244 7105</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Play for fun. Play for pride. Play for Mullahoran.</p>
+  </div>
+</footer>
+
+<script>
+  // Mobile hamburger menu
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+
+  function closeMobileNav(){
+    mobileNav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileNav));
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') closeMobileNav();
+  });
+</script>
+
+</body>
+</html>
